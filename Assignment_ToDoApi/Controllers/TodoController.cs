@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Assignment_ToDoApi.Controllers
 {
+    [ApiController]                 // <-- Add this
+    [Route("api/[controller]")]     // <-- Add this
     public class TodoController : Controller
     {
         private static List<TodoItem> todos = new List<TodoItem>();
