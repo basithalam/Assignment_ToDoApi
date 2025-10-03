@@ -17,7 +17,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();       // Swagger JSON
-    app.UseSwaggerUI();     // Swagger UI
+    app.UseSwaggerUI();     // Swagger UI https://localhost:7058/swagger/index.html
 }
 
 app.UseHttpsRedirection();
